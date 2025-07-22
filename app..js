@@ -31,7 +31,7 @@ function chequearEdad(edad) {
   }
 }
 
-function chequearFrutas(peras, manzanas, frutillas) {
+function chequearFrutas (peras, manzanas, frutillas) {
   if (peras >= 5 && manzanas >= 5 && frutillas >= 5) {
     console.log("Tenés todas las frutas")
   } else if (peras >= 5 || manzanas >= 5 || frutillas >= 5) {
@@ -133,9 +133,12 @@ function iniciar() {
     console.log("¡Nos vemos pronto!")
   }
 }
+const colores = ["rojo", "azul", "verde", "amarillo", "morado"].sort()
 
+console.log("Colores ordenados:", colores)
+
+// consola tine que mostrar forma ordenada: [ 'amarillo', 'azul', 'verde', 'morado', 'rojo' ]//
 iniciar()
-
 
 
 
