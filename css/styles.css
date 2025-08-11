@@ -1,10 +1,53 @@
-/*header*/
-/*footer*/
-/*home*/
-main {
-  background-color: aqua;
-  text-align: center;
-  display: flex;
+/* Básicos de layout y tipografía */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/* Inputs y botones */
+input, button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botones con interacción */
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Espaciado para secciones resultantes */
+#resultado,
+#cafe-menu,
+#colores-lista {
+  margin-top: 20px;
+}
+
+/* Botones del menú de cafés en línea */
+#cafe-menu button {
+  width: auto;
+  margin: 5px 5px 0 0;
+}
