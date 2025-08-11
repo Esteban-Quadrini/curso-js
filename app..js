@@ -1,4 +1,4 @@
-// 1) Funciones de renderizado en el DOM
+
 
 function mostrarBienvenidaDOM({ nombre, apellido, edad, dni }) {
   const cont = document.getElementById("resultado");
@@ -84,7 +84,6 @@ function renderCafeMenu(edad) {
   cont.appendChild(finalizar);
 }
 
-// 2) Procesar formulario
 
 function procesarFormulario() {
   const nombre    = document.getElementById("nombre").value.trim();
@@ -103,7 +102,7 @@ function procesarFormulario() {
   const usuario = { nombre, apellido, edad, dni };
   localStorage.setItem("usuario", JSON.stringify(usuario));
 
-  // Llamadas a las funciones que renderizan en pantalla
+  
   mostrarBienvenidaDOM(usuario);
   chequearEdadDOM(edad);
   chequearFrutasDOM(peras, manzanas, frutillas);
@@ -112,10 +111,9 @@ function procesarFormulario() {
   mostrarColoresOrdenados();
 }
 
-// 3) Arranque: precarga datos y asocia el botón
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Si hay datos en localStorage, precargarlos
+
   const datos = JSON.parse(localStorage.getItem("usuario") || "null");
   if (datos) {
     ["nombre","apellido","edad","dni"].forEach(key => {
